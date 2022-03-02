@@ -1,0 +1,253 @@
+:root{
+    --main-color: #ec213c;
+    --black:black;
+    --border:.1rem solid rgba(24, 10, 10, 0.3);
+  }
+  
+  *{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: .2s linear;
+  }
+
+  .h1, h1{
+    font-size: 5.5rem;
+  } 
+  
+  .h5, h5{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-left: 2.8rem;
+    color: rgb(185, 184, 184);
+
+  }
+   
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    min-height:100vh;
+    background: black;
+  }
+
+  
+  section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 130px;
+    color: #fff;
+  }
+  
+  .btn{
+    display: inline-block;
+    padding:.3rem 1.5rem;
+    font-size: 1.7rem;
+    background: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 1.5rem;
+  }
+  
+  .btn:hover{
+    background: rgb(102, 102, 250);
+    color: white;
+  }
+  
+  #login-btn2{
+    position: absolute;
+    margin-left: 104.2rem;
+  }
+  #sign-btn2{
+    position: absolute;
+    margin-left: 112rem;
+  }
+
+  #menu-btn{
+    display: none;
+  }
+  
+  
+  /* Header */
+  
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:.1rem 2%;
+    background-color: black;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+  }
+  
+  .header .navbar2 a{
+    text-decoration: none;
+    margin: -21rem;
+    font-size: 1.6rem;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .header .navbar2 a:hover{
+    color:var(--main-color);
+  }
+  
+  .header .logo2{
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    letter-spacing: .2rem;
+    font-size: 2.8rem;
+    height: 4rem;
+    color:  #ffff;
+  }
+
+   /* Dropdown */
+  .navbar-expand-lg{
+    margin-right: 85rem;
+  }
+
+  .px-4{
+    padding-right: 83.5rem!important;
+    padding-bottom: 4.5rem!important;
+}
+
+  .dropdown-menu[data-bs-popper]{
+      left: -5rem;
+      margin-top: 0.125rem;
+      border-radius: 0 0 .8rem .8rem;
+  }
+
+  .container-fluid{
+      width: 682%;
+  }
+
+  #nav2{
+    display: inline;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: -1rem;
+  }
+
+  #nav2:hover{
+    color:black;
+    font-weight: bold;
+    background-color: rgb(228, 224, 224);
+    border-radius: .5rem;
+  }
+
+  .list-group-item{
+    display: inline;
+    border: none;
+  }
+
+  .list-group img{
+    width: 26px;
+    margin-left: 2px;
+    margin-top: -2px;
+    
+  }
+
+  /* Tools */
+  .popularTools .heading2{
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 10rem;
+    margin-top: 8rem;
+  }
+  
+  .popularTools .subHeading{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-left: 19rem; 
+    width: 63rem;
+  }
+  
+  .popularTools .box-container {
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(130px, auto);
+    gap: 2.5rem;
+
+  }
+  
+  .popularTools .box-container .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  .popularTools .box-container .box:hover{
+    background-color: rgb(243, 239, 239);
+  }
+  
+  .popularTools .box-container .box img{
+    display:inline;
+    width: 59px;
+    height: 55px;
+    padding-bottom: 12px;
+    margin-left: -16px;
+  }
+  
+  .popularTools .box-container .toolRedirect {
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    line-height: 2.5rem;
+  }
+  
+  .popularTools .box-container .toolRedirect:hover{
+    color: #ec213c;
+  }
+  
+  .popularTools .box-container p{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    width: 185px;
+    margin-bottom: 9px;
+  }
+  
+  .popularTools .box-container #extract{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    width: 185px;
+    margin-bottom: -7px;
+  }
+
+  .popularTools .box-container #extract2{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    width: 185px;
+    margin-bottom: -7px;
+  }
+  
+  

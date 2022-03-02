@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Upload JavaScript with Progress Ba | CodingNepal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="compress.css">
+  
+</head>
+<body>
+  <div class="wrapper">
+    <form action="#">
+      <input class="file-input" type="file" name="file" hidden>
+      <i class="fas fa-cloud-upload-alt"></i>
+      <p>Browse File to Upload</p>
+    </form>
+    <section class="progress-area">
+            <li class="row">
+              <i class="fas fa-file-alt"></i>
+              <div class="content">
+              <div class="detail">
+                <span class="name">Image_01 | uploading</span>
+                <span class="percent">50%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+            </div>
+            </li>
+    </section>
+    <section class="uploaded-area">
+            <li class="row">
+              <div class="content">
+                <i class="fas fa-file-alt"></i>
+                <div class="detail">
+                  <span class="name">Image_01 | uploaded</span>
+                  <span class="size">70 Kb</span>
+                </div>
+              </div>
+              <i class="fas fa-check"></i>
+            </li>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

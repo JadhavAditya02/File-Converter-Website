@@ -1,0 +1,350 @@
+:root{
+    --main-color: #ec213c;
+    --black:black;
+    --border:.1rem solid rgba(24, 10, 10, 0.3);
+  }
+  
+  *{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: .2s linear;
+  }
+
+  .h1, h1{
+    font-size: 5.5rem;
+  } 
+  
+  .h5, h5{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-left: 2.8rem;
+    color: rgb(185, 184, 184);
+
+  }
+   
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    min-height:100vh;
+    background: black;
+  }
+
+  
+  section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 320px;
+    color: #fff;
+  }
+  
+  .btn{
+    display: inline-block;
+    padding:.3rem 1.5rem;
+    font-size: 1.7rem;
+    background: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 1.5rem;
+  }
+  
+  .btn:hover{
+    background: rgb(102, 102, 250);
+    color: white;
+  }
+  
+  #login-btn2{
+    position: absolute;
+    margin-left: 104.2rem;
+  }
+  #sign-btn2{
+    position: absolute;
+    margin-left: 112rem;
+  }
+
+  #menu-btn{
+    display: none;
+  }
+  
+  
+  /* Header */
+  
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:.1rem 2%;
+    background-color: black;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+  }
+  
+  .header .navbar2 a{
+    text-decoration: none;
+    margin: -21rem;
+    font-size: 1.6rem;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .header .navbar2 a:hover{
+    color:var(--main-color);
+  }
+  
+  .header .logo2{
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    letter-spacing: .2rem;
+    font-size: 2.8rem;
+    height: 4rem;
+    color:  #ffff;
+  }
+
+   /* Dropdown */
+  .navbar-expand-lg{
+    margin-right: 85rem;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link{
+    padding-left: 5.6rem!important;
+
+  }
+
+  .px-4{
+      padding-right: 83.5rem!important;
+      padding-bottom: 4.5rem!important;
+  }
+
+  .dropdown-menu[data-bs-popper]{
+      left: -5rem;
+      margin-top: 0.125rem;
+      border-radius: 0 0 .8rem .8rem;
+  }
+
+  .container-fluid{
+      width: 682%;
+  }
+
+  #nav2{
+    display: inline;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: -1rem;
+  }
+
+  #nav2:hover{
+    color:black;
+    font-weight: bold;
+    background-color: rgb(228, 224, 224);
+    border-radius: .5rem;
+  }
+
+  .list-group-item{
+    display: inline;
+    border: none;
+  }
+
+  .list-group img{
+    width: 26px;
+    margin-left: 2px;
+    margin-top: -2px;
+    
+  }
+
+  .header .heading2{
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin-left: -111rem;
+    margin-top: 13px;
+    color: #2980b9;
+    width: 161rem;
+    font-weight: 600;
+  }
+
+  .header .heading2 img{
+    width: 43px;
+    margin-left: 2px;
+    margin-top: -2px;
+  }
+
+
+  /* Pdf to word */
+
+.file-input-container .subHeading{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+    line-height: 17rem;
+    margin-top: -23rem; 
+    margin-left: 1.8rem; 
+    width: 63rem;
+  }
+
+  .uploadFile #file-btn{
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  position: relative;
+  margin-top: -6rem;
+  margin-left: 4rem;
+  background-color: #2980b9;
+  color: white;
+  font-weight: bold;
+  width: 64rem;
+  padding: 2rem 18rem 2rem 18rem;
+  border-radius: 4rem;
+  }
+
+  .file-input{
+    position: absolute;
+    margin-left: 8rem;
+  }
+
+  .uploadFile form{
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  }
+
+  form .fa-plus{
+  position: absolute;
+  margin-left: 36rem;
+  margin-top: .3rem;
+  font-size: 24px;
+  }
+
+  form .fa-google-drive{
+  position: absolute;
+  margin-left: -36rem;
+  margin-top: 5rem;
+  font-size: 34px;
+  }
+
+  form .fa-dropbox{
+  position: absolute;
+  margin-left: -28rem;
+  margin-top: 5rem;
+  font-size: 34px;
+  } 
+
+
+  .progress-area {
+    display: flex;
+    /* background: #cbdbfb; */
+    margin-top: -5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 2rem 4rem;
+    border-radius: .6rem;
+    font-size: 1.3rem;
+    color: #000;
+  }
+  
+  .progress-area .progress-bar{
+    background: #fff;
+    margin-top: 1rem;
+    height: 8px;
+    width: 100%;
+    border-radius: 1rem;
+  }
+
+  .progress-bar .progress{
+    height: 100%;
+    width: 0%;
+    border-radius: inherit;
+    background: #6990f2;
+  }
+
+  .uploaded-area {
+    background: #cbdbfb;
+    margin-top: 2rem;
+    margin-right: -36rem;
+    padding: 2rem 3rem;
+    border-radius: .6rem;
+    font-size: 1.3rem;
+    color: #000;
+  }
+
+  .fa-file-alt{
+    font-size: 3rem;
+    margin-top: .4rem;
+    margin-right: 1.5rem;
+    margin-left: -2rem;
+    width: 4%;
+    color: #5045ee;
+  }
+  
+  .file-input-container .content .percent{
+    margin-left: 17.9rem;
+  }
+
+  .wrapper{
+    width: 583px;
+    /* background: rgb(255, 255, 255); */
+    border-radius: 5px;
+    padding-top: 2px;
+    padding-bottom: 12px;
+    margin-left: 4rem;
+    /* margin-top: 1rem; */
+    box-shadow: 7px 7px 12px rgba(0,0,0,0.05);
+    }
+
+  .uploaded-area {
+    display: flex;
+    background: #cbdbfb;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem 4rem;
+    border-radius: .6rem;
+    font-size: 1.3rem;
+    color: #000;
+  }
+
+  #wrap{
+    max-height: 220px;
+    overflow-y: auto; 
+  }
+  
+  .uploaded::-webkit-scrollbar {
+    display: none;
+  }
+
+  .uploaded-area .fa-check{
+    font-size: 2rem;
+    padding-top: 2rem;
+    margin-left: 40.1rem;
+  }
+
+  /* .uploaded-area .size{
+    margin-left: 35.5rem;
+  } */
+
+
+
+
+
+  /* #upload-btn{
+  display: inline;
+  margin-top: 12rem;
+  margin-left: -12rem;
+  } */

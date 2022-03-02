@@ -1,0 +1,252 @@
+:root{
+  --main-color: #ec213c;
+  --black:black;
+  --border:.1rem solid rgba(24, 10, 10, 0.3);
+}
+
+*{
+  font-family: 'Roboto', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: .2s linear;
+}
+
+ .h1, h1{
+  font-size: 5.5rem;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  min-height:100vh;
+  background: black;
+}
+
+section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  color: #fff;
+}
+
+.btn{
+  display: inline-block;
+  padding:.3rem 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 1.7rem;
+  background: white;
+  color: black;
+  cursor: pointer;
+  border-radius: 1.5rem;
+}
+
+.btn:hover{
+  background: rgb(102, 102, 250);
+  color: white;
+}
+
+#login-btn{
+  margin-right: -20.5rem;
+}
+
+#tool-btn{
+  position: absolute;
+  border-radius: 4px;
+  margin-top: 32rem;
+}
+
+#menu-btn{
+  display: none;
+}
+
+/* Header */
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:.1rem 2%;
+  background: black;
+  border-bottom: var(--border);
+  position: fixed;
+  top:0; left: 0; right: 0;
+  z-index: 1000;
+}
+
+.header .navbar a{
+  text-decoration: none;
+  margin: 2rem;
+  font-size: 1.6rem;
+  color: #ffff;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.header .navbar a:hover,
+.header .navbar a.active{
+  color:var(--main-color);
+}
+
+.header .logo{
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  text-decoration: none;
+  letter-spacing: .2rem;
+  font-size: 2.8rem;
+  color:  #ffff;
+  margin-bottom: 2rem;
+}
+
+/* Hero page */
+.hero img{
+  position: absolute;
+  object-fit: cover;
+}
+
+.hero img#hero{
+  margin-left: 63rem;
+  z-index: 1;
+}
+
+.hero #pdf{
+  margin-left: 86rem ;
+  margin-top: 19rem ;
+  width : 50px;
+  height : 50px;
+  transform: rotate(368deg);
+  z-index: 1;
+}
+
+.hero #wave{
+  margin-left: -10rem ;
+  margin-top: -10rem ;
+  width : 100%;
+  height : 100%;
+}
+
+.hero #word{
+  margin-left: 72rem ;
+  margin-top: 4rem ;
+  width : 50px;
+  height : 50px;
+  transform: rotate(328deg);
+  mix-blend-mode: screen;
+}
+
+.hero .heading{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  color: #fff;
+  line-height: 39px;
+  margin-top: 9rem;
+  padding-bottom: 17rem;
+  display: inline-block;
+}
+
+.hero .title{
+  position: absolute;
+  color: #fff;
+  padding-right: 66rem;
+  font-weight: bold;
+}
+
+.hero .details{
+  position: absolute;
+  color: #fff;
+  padding-right: 56rem;
+  margin-top: 14rem;
+  font-size: 2rem;
+}
+
+/*  */
+
+.popularTools .heading1{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 4rem;
+  line-height: 5rem;
+  margin-top: 5rem;
+}
+
+.popularTools .subHeading{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+.popularTools .box-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(110px, auto);
+  gap: 2rem;
+}
+
+.popularTools .box-container .box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.popularTools .box-container .box:hover{
+  background-color: rgb(243, 239, 239);
+}
+
+.popularTools .box-container .box img{
+  display:inline;
+  width: 59px;
+  height: 55px;
+  padding-bottom: 12px;
+  margin-left: -16px;
+}
+
+.popularTools .box-container .toolRedirect {
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.popularTools .box-container .toolRedirect:hover{
+  color: #ec213c;
+}
+
+.popularTools .box-container p{
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.popularTools #pdfTool{
+  border-radius: .4rem;
+  margin-left: 40rem;
+  margin-top: 2rem;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: rgb(101, 213, 250);
+}
+.popularTools #pdfTool:hover{
+  background-color:#fff;
+  color: black;
+}
+
+
+
+
